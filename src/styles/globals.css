@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+@layer base {
+  html {
+    @apply text-gray-700;
+  }
+  textarea {
+    @apply resize-none p-2;
+  }
+  /* input {
+    @apply p-2 mx-2 border border-gray-300 bg-gray-100;
+  } */
+}
+
+@layer utilities {
+  .btn {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  }
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #959595;
+  border-radius: 0;
+}
+input:focus {
+  outline: none;
+  background-color: transparent;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
